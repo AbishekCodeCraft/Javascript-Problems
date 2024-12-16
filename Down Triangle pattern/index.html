@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = 5;
+        var res = ""
+        for (i = 1; i <= n; i++) {
+            for (j = 0; j <= (2 * n) - 2; j++) {
+                if (i == 1) {
+                    res = res + "*"
+                }
+                else {
+                    if (i > 1 && j < i - 1) {
+                        res = res + " "
+                    }
+                    else if (i > 1 && j >= (2 * n) - i) {
+                        res = res + " "
+                    }
+                    else {
+                        res = res + "*"
+                    }
+                }
+            } res = res + "\n"
+        }
+        console.log(res)
+    </script>
+</body>
+
+</html>
